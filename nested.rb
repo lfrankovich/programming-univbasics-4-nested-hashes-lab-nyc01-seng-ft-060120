@@ -89,6 +89,13 @@ programmer_hash[:yukihiro_matsumoto][1] = {:languages => ["LISP", "C"]}
 end
 
 
+programmer_hash[:yukihiro_matsumoto] = [
+  { known_for: "Prince Escalus" },
+  { name: "Apothecary" }
+]
+ # => [{:name=>"Prince Escalus"}, {:name=>"Apothecary"}]
+
+
 
 
 def changing_alan
