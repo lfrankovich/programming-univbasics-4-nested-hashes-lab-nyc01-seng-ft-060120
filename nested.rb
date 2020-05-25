@@ -81,23 +81,16 @@ def adding_matz
         :languages => ["C"]
       }
     }
-    
-programmer_hash[:yukihiro_matsumoto] = []
-programmer_hash[:yukihiro_matsumoto][0] = {:known_for => "Ruby"}
-programmer_hash[:yukihiro_matsumoto][1] = {:languages => ["LISP", "C"]}
+    programmer_hash[:yukihiro_matsumoto] = [
+      { known_for: "Ruby" },
+      { languages: ["LISP", "C"] }
+    ]
   puts programmer_hash
 end
 
 
-programmer_hash[:yukihiro_matsumoto] = [
-  { known_for: "Prince Escalus" },
-  { name: "Apothecary" }
-]
- # => [{:name=>"Prince Escalus"}, {:name=>"Apothecary"}]
 
-
-
-
+ 
 def changing_alan
   # change what Alan Kay is :known_for to the value of the alans_new_info variable. 
   # return the entire updated hash
